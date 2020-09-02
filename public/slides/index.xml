@@ -5,7 +5,7 @@
     <link>/slides/</link>
       <atom:link href="/slides/index.xml" rel="self" type="application/rss+xml" />
     <description>Slides</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 05 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Marcelo Albuquerque 2020</copyright><lastBuildDate>Tue, 05 Feb 2019 00:00:00 +0000</lastBuildDate>
     <item>
       <title>Slides</title>
       <link>/slides/example/</link>
@@ -146,7 +146,6 @@ Three
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/slides/masters-dissertation/masters/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;r-markdown&#34; class=&#34;section level1&#34;&gt;
@@ -208,7 +207,6 @@ Three
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/slides/masters-dissertation/masters-xaringan/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 &lt;script src=&#34;/rmarkdown-libs/xaringanExtra-webcam/webcam.js&#34;&gt;&lt;/script&gt;
 &lt;script id=&#34;xaringanExtra-webcam-options&#34; type=&#34;application/json&#34;&gt;{&#34;width&#34;:&#34;200&#34;,&#34;height&#34;:&#34;200&#34;,&#34;margin&#34;:&#34;1em&#34;}&lt;/script&gt;
 &lt;script src=&#34;/rmarkdown-libs/xaringanExtra-logo/logo.js&#34;&gt;&lt;/script&gt;
@@ -596,13 +594,13 @@ leaflet() %&amp;gt;% addTiles() %&amp;gt;% setView(-93.65, 42.0285, zoom = 17)&l
 &lt;h1&gt;Some Tips&lt;/h1&gt;
 &lt;p&gt;.pull-left[
 An example using a leading &lt;code&gt;*&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```r
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;   if (TRUE) {
+   ** message(&amp;quot;Very important!&amp;quot;)
+   }
+   ```
+Output:
+```r
 if (TRUE) {
-** message(&amp;quot;Very important!&amp;quot;)
-}
-```&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Output:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;if (TRUE) {
 * message(&amp;quot;Very important!&amp;quot;)
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;This is invalid R code, so it is a plain fenced code block that is not executed.

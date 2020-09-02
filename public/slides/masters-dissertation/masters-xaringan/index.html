@@ -61,7 +61,6 @@
     <section>
     
       
-<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 <script src="/rmarkdown-libs/xaringanExtra-webcam/webcam.js"></script>
 <script id="xaringanExtra-webcam-options" type="application/json">{"width":"200","height":"200","margin":"1em"}</script>
 <script src="/rmarkdown-libs/xaringanExtra-logo/logo.js"></script>
@@ -449,13 +448,13 @@ leaflet() %&gt;% addTiles() %&gt;% setView(-93.65, 42.0285, zoom = 17)</code></p
 <h1>Some Tips</h1>
 <p>.pull-left[
 An example using a leading <code>*</code>:</p>
-<pre><code>```r
+<pre class="r"><code>   if (TRUE) {
+   ** message(&quot;Very important!&quot;)
+   }
+   ```
+Output:
+```r
 if (TRUE) {
-** message(&quot;Very important!&quot;)
-}
-```</code></pre>
-<p>Output:</p>
-<pre class="r"><code>if (TRUE) {
 * message(&quot;Very important!&quot;)
 }</code></pre>
 <p>This is invalid R code, so it is a plain fenced code block that is not executed.
