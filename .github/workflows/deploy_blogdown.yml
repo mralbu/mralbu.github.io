@@ -13,14 +13,14 @@ jobs:
     runs-on: macOS-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: r-lib/actions/setup-r@v1
-      - uses: r-lib/actions/setup-pandoc@v1
-      - name: Install rmarkdown
-        run: Rscript -e 'install.packages(c("rmarkdown","blogdown", "xaringanExtra", "xaringan"))'
-      - name: install hugo
-        run: Rscript -e 'blogdown::install_hugo()'
-      - name: Render blog
-        run: Rscript -e 'blogdown::build_site()'
+      # - uses: r-lib/actions/setup-r@v1
+      # - uses: r-lib/actions/setup-pandoc@v1
+      # - name: Install rmarkdown
+      #   run: Rscript -e 'install.packages(c("rmarkdown","blogdown", "xaringanExtra", "xaringan"))'
+      # - name: install hugo
+      #   run: Rscript -e 'blogdown::install_hugo()'
+      # - name: Render blog
+      #   run: Rscript -e 'blogdown::build_site()'
       - uses: actions/upload-artifact@v1
         with:
           name: public
@@ -47,7 +47,7 @@ jobs:
        uses: Cecilapp/GitHub-Pages-deploy@master
        env:
           EMAIL: ${{ secrets.EMAIL }}               # must be a verified email
-          GH_TOKEN: ${{ secrets.GITHUB_PAT }} # https://github.com/settings/tokens
+          GH_TOKEN: ${{ secrets.GH_TOKEN }} # https://github.com/settings/tokens
           BUILD_DIR: public/                     # "_site/" by default
 
 
