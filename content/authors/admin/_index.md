@@ -20,12 +20,15 @@ organizations:
   url: ""
 role: Petrophysics Researcher
 social:
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/mralbu13
+# - icon: twitter
+#   icon_pack: fab
+#   link: https://twitter.com/mralbu13
 - icon: github
   icon_pack: fab
   link: https://github.com/mralbu
+- icon: linkedin-in
+  icon_pack: fab
+  link: https://www.linkedin.com/in/marcelo-albuquerque-1b45458/
 superuser: true
 title: Marcelo Albuquerque
 user_groups:
