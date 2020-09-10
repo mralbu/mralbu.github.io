@@ -1,6 +1,6 @@
 ---
-date: "2016-04-27T00:00:00Z"
-external_link: ""
+date: "2020-09-15T00:00:00Z"
+external_link: "https://mralbu.github.io/masterthesis/"
 image:
   caption: Photo by rawpixel on Unsplash
   focal_point: Smart
@@ -9,11 +9,12 @@ image:
   # icon_pack: fab
   # name: Follow
   # url: https://twitter.com/georgecushen
-slides: example
-summary: An example of using the in-built project page.
+#slides: example
+summary: Prediction of Petrophysical Properties Using Machine Learning and Hierarchical Multi-Task Linear Models
 tags:
-- Deep Learning
-title: Internal Project
+- Petrophysics
+- Machine Learning
+title: Master Thesis
 url_code: ""
 url_pdf: ""
 url_slides: ""
