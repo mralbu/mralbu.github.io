@@ -11,18 +11,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      # - uses: r-lib/actions/setup-r@v1
-      # - uses: r-lib/actions/setup-pandoc@v1
-      # - name: Install rmarkdown and blogdown
-      #   run: Rscript -e 'install.packages(c("rmarkdown","blogdown", "xaringan", "xaringanExtra"))'
-      # - name: Install Hugo
-      #   run: Rscript -e 'blogdown::install_hugo(extended = TRUE, version = "0.68.3")'
+      - uses: r-lib/actions/setup-r@v1
+      - uses: r-lib/actions/setup-pandoc@v1
+      - name: Install rmarkdown and blogdown
+        run: Rscript -e 'install.packages(c("rmarkdown","blogdown", "xaringan", "xaringanExtra"))'
+      - name: Install Hugo
+        run: Rscript -e 'blogdown::install_hugo(extended = TRUE, version = "0.74.3")'
       # - name: Get themes
       #   run: git submodule update --remote
-      # - name: Look at files
-      #   run: Rscript -e 'dir()'
-      # - name: Run build_site()
-      #   run: Rscript -e 'blogdown::build_site(local = TRUE)'
+      - name: Look at files
+        run: Rscript -e 'dir()'
+      - name: Run build_site()
+        run: Rscript -e 'blogdown::build_site(local = TRUE)'
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
