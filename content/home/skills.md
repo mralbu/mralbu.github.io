@@ -31,7 +31,7 @@ subtitle = ""
   icon = "chart-line"
   icon_pack = "fas"
   name = "Statistics"
-  description = "60%"  
+  description = "70%"  
 
 # Uncomment to use emoji icons.
 # [[feature]]
@@ -44,9 +44,9 @@ subtitle = ""
 # Place custom SVG icon in `assets/images/icon-pack/`, creating folders if necessary.
 # Reference the SVG icon name (without `.svg` extension) in the `icon` field.
 # [[feature]]
-#  icon = "your-custom-icon-name"
+#  icon = "julia"
 #  icon_pack = "custom"
-#  name = "Surfing"
-#  description = "90%"
+#  name = "Julia"
+#  description = "40%"
 
 +++

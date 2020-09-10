@@ -1,7 +1,7 @@
 ---
 authors:
 - admin
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include machine learning, data visualization and petrophysical characterization.
 education:
   courses:
   - course: MEng in Computer Science
