@@ -11,8 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: r-lib/actions/setup-r@v1
-      - uses: r-lib/actions/setup-pandoc@v1
+      # - uses: r-lib/actions/setup-r@v1
+      # - uses: r-lib/actions/setup-pandoc@v1
       # - name: Install rmarkdown and blogdown
       #   run: Rscript -e 'install.packages(c("rmarkdown","blogdown"))'
       # - name: Install Hugo
