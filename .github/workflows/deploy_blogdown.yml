@@ -3,33 +3,28 @@ on:
      branches:
        - master
 
-name: deployblog
+name: build_and_goto_gh_pages
 
 jobs:
   blogdown:
-    name: Render-Blog
-    runs-on: macOS-latest
+    name: build_and_push_to_gh_pages
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: actions/upload-artifact@v1
+      - uses: r-lib/actions/setup-r@v1
+      - uses: r-lib/actions/setup-pandoc@v1
+      - name: Install rmarkdown and blogdown
+        run: Rscript -e 'install.packages(c("rmarkdown","blogdown"))'
+      - name: Install Hugo
+        run: Rscript -e 'blogdown::install_hugo(extended = TRUE, version = "0.68.3")'
+      - name: Get themes
+        run: git submodule update --remote
+      - name: Look at files
+        run: Rscript -e 'dir()'
+      - name: Run hugo_build()
+        run: Rscript -e 'blogdown::hugo_build(local = FALSE)'
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          name: public
-          path: public/
-
-  checkout-and-deploy:
-   runs-on: ubuntu-latest
-   needs: blogdown
-   steps:
-     - name: Checkout
-       uses: actions/checkout@master
-     - name: Download artifact
-       uses: actions/download-artifact@v1.0.0
-       with:
-         name: public
-         path: ../public
-     - name: Deploy to GitHub Pages
-       uses: Cecilapp/GitHub-Pages-deploy@master
-       env:
-          EMAIL: ${{ secrets.EMAIL }}
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          BUILD_DIR: public/
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
