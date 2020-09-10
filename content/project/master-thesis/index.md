@@ -9,7 +9,7 @@ image:
   # icon_pack: fab
   # name: Follow
   # url: https://twitter.com/georgecushen
-#slides: example
+# slides: example
 summary: Prediction of Petrophysical Properties Using Machine Learning and Hierarchical Multi-Task Linear Models
 tags:
 - Petrophysics
