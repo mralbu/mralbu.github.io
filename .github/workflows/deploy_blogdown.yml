@@ -22,7 +22,7 @@ jobs:
       # - name: Look at files
       #   run: Rscript -e 'dir()'
       # - name: Run build_site()
-      #   run: Rscript -e 'blogdown::build_site(local = FALSE)'
+      #   run: Rscript -e 'blogdown::build_site(local = TRUE)'
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
