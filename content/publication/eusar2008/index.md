@@ -22,7 +22,7 @@ publication_types:
 - "1"
 publishDate: "2008-10-01T00:00:00Z"
 # slides: example
-summary: The Back-Projection Algorithm is a Synthetic Aperture Radar processing approach that uses time-domain convolution in order to perform SAR focusing. This work highlights benefits of this approach, such as exact inversion, ideal motion compensation including topography information and handling of general aperture geometries.
+summary: The Back-Projection Algorithm is a Synthetic Aperture Radar processing approach that uses time-domain convolution in order to perform SAR focusing. Some benefits of this approach, such as exact inversion, image registration and ideal motion compensation are demonstrated, and an analysis of Circular SAR acquisition geometry and processing are discussed.
 tags:
 - Signal Processing
 - SAR
