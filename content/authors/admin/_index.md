@@ -28,7 +28,10 @@ social:
   link: https://github.com/mralbu
 - icon: linkedin-in
   icon_pack: fab
-  link: https://www.linkedin.com/in/marcelo-albuquerque-1b45458/
+  link: https://www.linkedin.com/in/mralbu/
+- icon: cv
+  icon_pack: ai
+  link: https://mralbu.github.io/cv
 superuser: true
 title: Marcelo Albuquerque
 user_groups:
